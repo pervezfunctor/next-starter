@@ -1,7 +1,13 @@
 import React from 'react'
+import { Text } from '@chakra-ui/react'
+import { ChakraProvider } from '@chakra-ui/react'
 
 function App() {
-  return <h1 className="is-text is-size-1">Hello, World</h1>
+  return (
+    <ChakraProvider>
+      <Text fontSize="xl">Hello, World</Text>
+    </ChakraProvider>
+  )
 }
 
 export default App
