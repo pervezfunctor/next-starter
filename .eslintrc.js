@@ -3,6 +3,7 @@ const restrictedGlobals = require('confusing-browser-globals')
 module.exports = {
   env: {
     browser: true,
+    node: true,
     es6: true,
     mocha: true,
   },
@@ -119,7 +120,7 @@ module.exports = {
     'no-bitwise': 'error',
     'no-caller': 'error',
     'no-cond-assign': ['error', 'except-parens'],
-    'no-console': 'error',
+    'no-console': 'warn',
     'no-const-assign': 'error',
     'no-control-regex': 'error',
     'no-debugger': 'error',
@@ -275,18 +276,6 @@ module.exports = {
     '@typescript-eslint/triple-slash-reference': [
       'error',
       { path: 'always', types: 'prefer-import', lib: 'always' },
-    ],
-    'id-blacklist': [
-      'error',
-      'any',
-      'Number',
-      'number',
-      'String',
-      'string',
-      'Boolean',
-      'boolean',
-      'Undefined',
-      'undefined',
     ],
     'unicorn/filename-case': [
       'error',

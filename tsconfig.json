@@ -25,12 +25,11 @@
     "sourceMap": true,
     "strict": true,
     "suppressImplicitAnyIndexErrors": true,
-    "target": "esnext",
+    "target": "esnext"
     // "baseUrl": "./",
     // "paths": {
     // },
-
   },
-  "include": ["pages", "next.config.js", "next-env.d.ts"],
+  "include": ["pages", "safe", "components", "next.config.js", "next-env.d.ts"],
   "exclude": ["node_modules"]
 }

@@ -16,5 +16,8 @@
   "javascript.validate.enable": false,
   "typescript.surveys.enabled": false,
   "typescript.tsdk": "node_modules/typescript/lib",
-  "typescript.updateImportsOnFileMove.enabled": "always"
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "files.watcherExclude": {
+    "**/target": true
+  }
 }
