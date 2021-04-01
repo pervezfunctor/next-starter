@@ -2156,7 +2156,7 @@ debug@2, debug@^2.6.9:
   dependencies:
     ms "2.0.0"
 
-debug@4, debug@^4.0.1, debug@^4.1.0, debug@^4.1.1:
+debug@4, debug@^4.0.1, debug@^4.1.0, debug@^4.1.1, debug@^4.3.1:
   version "4.3.1"
   resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.1.tgz#f0d229c505e0c6d8c49ac553d1b13dc183f6b2ee"
   integrity sha512-doEwdvm4PCeK4K3RQN2ZC2BYUBaxwLARCqZmMjtF8a51J2Rb0xpVloFRnCODwqjpwnAoao4pelN8l3RJdv3gRQ==
@@ -5600,6 +5600,13 @@ stylis@^4.0.3:
   version "4.0.9"
   resolved "https://registry.yarnpkg.com/stylis/-/stylis-4.0.9.tgz#ae3d5283aa439225cf79dd2d0cf46f8bfd4ad393"
   integrity sha512-ci7pEFNVW3YJiWEzqPOMsAjY6kgraZ3ZgBfQ5HYbNtLJEsQ0G46ejWZpfSSCp/FaSiCSGGhzL9O2lN+2cB6ong==
+
+superjson@^1.7.3:
+  version "1.7.3"
+  resolved "https://registry.yarnpkg.com/superjson/-/superjson-1.7.3.tgz#2544f7fab70f4251b02bb646c5c519b7131e9db9"
+  integrity sha512-9BmEeJubbs9dUxWxn1I7+VLgdFv895q7BlCGh948IdD/5/RpDjQ6M0tNJJn88Sp/wswJGGuMrG5ii+ZQhoKzwQ==
+  dependencies:
+    debug "^4.3.1"
 
 supports-color@^5.3.0:
   version "5.5.0"
