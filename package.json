@@ -65,9 +65,9 @@
     "test": "jest --watch",
     "lint": "eslint \"./pages/**/*.{js,ts,tsx}\"",
     "lint:fix": "pnpm lint --quiet --fix",
-    "types": "tsc --noEmit -p .",
-    "types:watch": "pnpm types --watch",
-    "validate": "pnpm lint && pnpm types",
+    "types:ci": "tsc --noEmit -p .",
+    "types": "pnpm types --watch",
+    "ci": "pnpm types:ci && pnpm lint && pnpm test:ci",
     "sb": "start-storybook -p 6006 -s ./public",
     "build-sb": "build-storybook -s public"
   },

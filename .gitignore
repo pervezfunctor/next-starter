@@ -32,3 +32,4 @@ lerna-debug.log
 .fake
 .ionide
 .eslintcache
+tsconfig.tsbuildinfo
