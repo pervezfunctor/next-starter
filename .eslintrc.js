@@ -1,35 +1,23 @@
-const restrictedGlobals = require('confusing-browser-globals')
+const restrictedGlobals = require('confusing-browser-globals');
 
 module.exports = {
   env: {
     browser: true,
     node: true,
     es6: true,
-    mocha: true,
+    mocha: true
   },
-  extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/recommended-requiring-type-checking',
-  ],
+  extends: ["eslint:recommended", "plugin:@typescript-eslint/recommended-requiring-type-checking", "plugin:storybook/recommended"],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     project: 'tsconfig.json',
-    sourceType: 'module',
+    sourceType: 'module'
   },
-  plugins: [
-    '@typescript-eslint',
-    'react',
-    'jest',
-    'prettier',
-    'import',
-    'jsx-a11y',
-    'functional',
-    'prefer-arrow',
-    'no-null',
-    'unicorn',
-  ],
+  plugins: ['@typescript-eslint', 'react', 'jest', 'prettier', 'import', 'jsx-a11y', 'functional', 'prefer-arrow', 'no-null', 'unicorn'],
   settings: {
-    react: { version: 'detect' },
+    react: {
+      version: 'detect'
+    }
   },
   rules: {
     '@typescript-eslint/adjacent-overload-signatures': 'error',
@@ -79,7 +67,9 @@ module.exports = {
     'brace-style': ['off', 'off'],
     'class-methods-use-this': 'error',
     'constructor-super': 'error',
-    'default-case': ['error', { commentPattern: '^no default$' }],
+    'default-case': ['error', {
+      commentPattern: '^no default$'
+    }],
     'dot-location': ['error', 'property'],
     'eol-last': 'off',
     'functional/immutable-data': 'error',
@@ -146,7 +136,10 @@ module.exports = {
     'no-irregular-whitespace': 'off',
     'no-iterator': 'error',
     'no-label-var': 'error',
-    'no-labels': ['error', { allowLoop: true, allowSwitch: false }],
+    'no-labels': ['error', {
+      allowLoop: true,
+      allowSwitch: false
+    }],
     'no-lone-blocks': 'error',
     'no-loop-func': 'error',
     'no-multi-str': 'error',
@@ -171,7 +164,9 @@ module.exports = {
     'no-self-compare': 'error',
     'no-sequences': 'error',
     'no-shadow-restricted-names': 'error',
-    'no-shadow': ['off', { hoist: 'all' }],
+    'no-shadow': ['off', {
+      hoist: 'all'
+    }],
     'no-sparse-arrays': 'error',
     'no-template-curly-in-string': 'error',
     'no-this-before-super': 'error',
@@ -194,15 +189,12 @@ module.exports = {
     'no-whitespace-before-property': 'error',
     'no-with': 'error',
     'object-shorthand': 'error',
-    'prefer-arrow/prefer-arrow-functions': [
-      'error',
-      {
-        disallowPrototype: true,
-        singleReturnOnly: true,
-        classPropertiesAllowed: true,
-        allowStandaloneDeclarations: true,
-      },
-    ],
+    'prefer-arrow/prefer-arrow-functions': ['error', {
+      disallowPrototype: true,
+      singleReturnOnly: true,
+      classPropertiesAllowed: true,
+      allowStandaloneDeclarations: true
+    }],
     'prefer-const': 'error',
     'prefer-object-spread': 'error',
     'prefer-template': 'error',
@@ -230,7 +222,9 @@ module.exports = {
     'rest-spread-spacing': ['error', 'never'],
     'space-before-function-paren': 'off',
     'space-in-parens': ['off', 'never'],
-    'spaced-comment': ['error', 'always', { markers: ['/'] }],
+    'spaced-comment': ['error', 'always', {
+      markers: ['/']
+    }],
     'unicode-bom': ['error', 'never'],
     'use-isnan': 'error',
     'valid-typeof': 'error',
@@ -239,47 +233,44 @@ module.exports = {
     radix: 'error',
     strict: ['error', 'never'],
     yoda: 'error',
-
-    '@typescript-eslint/explicit-member-accessibility': [
-      'off',
-      { accessibility: 'explicit' },
-    ],
-    '@typescript-eslint/member-delimiter-style': [
-      'off',
-      {
-        multiline: {
-          delimiter: 'none',
-          requireLast: true,
-        },
-        singleline: {
-          delimiter: 'semi',
-          requireLast: false,
-        },
+    '@typescript-eslint/explicit-member-accessibility': ['off', {
+      accessibility: 'explicit'
+    }],
+    '@typescript-eslint/member-delimiter-style': ['off', {
+      multiline: {
+        delimiter: 'none',
+        requireLast: true
       },
-    ],
-    '@typescript-eslint/typedef': ['error', { arrowParameter: false }],
-    '@typescript-eslint/naming-convention': [
-      'error',
-      { selector: 'typeLike', format: ['PascalCase'] },
-      {
-        selector: 'variableLike',
-        format: ['camelCase', 'PascalCase'],
-        leadingUnderscore: 'allow',
-      },
-      {
-        selector: 'memberLike',
-        format: ['camelCase'],
-        leadingUnderscore: 'allow',
-      },
-    ],
-
-    '@typescript-eslint/triple-slash-reference': [
-      'error',
-      { path: 'always', types: 'prefer-import', lib: 'always' },
-    ],
-    'unicorn/filename-case': [
-      'error',
-      { cases: { camelCase: true, pascalCase: true } },
-    ],
-  },
-}
+      singleline: {
+        delimiter: 'semi',
+        requireLast: false
+      }
+    }],
+    '@typescript-eslint/typedef': ['error', {
+      arrowParameter: false
+    }],
+    '@typescript-eslint/naming-convention': ['error', {
+      selector: 'typeLike',
+      format: ['PascalCase']
+    }, {
+      selector: 'variableLike',
+      format: ['camelCase', 'PascalCase'],
+      leadingUnderscore: 'allow'
+    }, {
+      selector: 'memberLike',
+      format: ['camelCase'],
+      leadingUnderscore: 'allow'
+    }],
+    '@typescript-eslint/triple-slash-reference': ['error', {
+      path: 'always',
+      types: 'prefer-import',
+      lib: 'always'
+    }],
+    'unicorn/filename-case': ['error', {
+      cases: {
+        camelCase: true,
+        pascalCase: true
+      }
+    }]
+  }
+};
