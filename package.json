@@ -18,6 +18,9 @@
   },
   "devDependencies": {
     "@babel/core": "7.16.5",
+    "babel-jest": "27.4.4",
+    "@testing-library/jest-dom": "5.16.1",
+    "jest": "27.4.4",
     "@storybook/addon-actions": "6.4.9",
     "@storybook/addon-essentials": "6.4.9",
     "@storybook/addon-links": "6.4.9",
@@ -54,6 +57,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "test:ci": "jest",
+    "test": "jest --watch",
     "lint": "eslint \"./pages/**/*.{js,ts,tsx}\"",
     "lint:fix": "pnpm lint --quiet --fix",
     "types": "tsc --noEmit -p .",
