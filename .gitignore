@@ -34,3 +34,4 @@ lerna-debug.log
 .eslintcache
 tsconfig.tsbuildinfo
 .pnpm-debug.log
+.pnpm-store/
