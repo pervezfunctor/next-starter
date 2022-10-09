@@ -1,6 +1,6 @@
 if (typeof window === 'undefined') {
   const { server } = require('./server')
-  server.listen({
+  server?.listen({
     onUnhandledRequest: ({ method, url }) => {
       if (
         url.pathname.startsWith('/api') ||
