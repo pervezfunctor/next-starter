@@ -1,10 +1,10 @@
 module.exports = {
-  '**/*.(ts|js)?(x)': filenames =>
+  '**/*.(ts)?(x)': filenames =>
     `next lint --fix --file ${filenames
       .map(file => file.split(process.cwd())[1])
       .join(' --file ')}`,
   '**/*.(ts|tsx)': () => 'npx tsc --noEmit',
-  '**/*.(ts|tsx|js)': filenames => [
+  '**/*.(ts|tsx)': filenames => [
     `npx prettier --write ${filenames.join(' ')}`,
   ],
 }

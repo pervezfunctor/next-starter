@@ -7,10 +7,12 @@ module.exports = {
     es6: true,
     mocha: true
   },
-  extends: ["eslint:recommended", "plugin:@typescript-eslint/recommended-requiring-type-checking", "plugin:storybook/recommended"],
+  extends: ["eslint:recommended", "plugin:@typescript-eslint/recommended-requiring-type-checking", "plugin:storybook/recommended",
+    "plugin:@next/next/recommended",
+  ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    project: 'tsconfig.json',
+    project: './tsconfig.json',
     sourceType: 'module'
   },
   plugins: ['@typescript-eslint', 'react', 'jest', 'prettier', 'import', 'jsx-a11y', 'functional', 'prefer-arrow', 'no-null', 'unicorn'],
@@ -215,7 +217,7 @@ module.exports = {
     'react/no-direct-mutation-state': 'error',
     'react/no-is-mounted': 'error',
     'react/no-typos': 'error',
-    'react/react-in-jsx-scope': 'error',
+    'react/react-in-jsx-scope': 'off',
     'react/require-render-return': 'error',
     'react/style-prop-object': 'error',
     'require-yield': 'error',

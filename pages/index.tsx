@@ -1,8 +1,13 @@
-import { Text } from '@chakra-ui/react'
-import React from 'react'
+import { Container, Heading } from '@chakra-ui/react'
 
 function App() {
-  return <Text fontSize="xl">Hello, World</Text>
+  return (
+    <Container>
+      <Heading as="h1" textAlign="center">
+        Hello Next.JS
+      </Heading>
+    </Container>
+  )
 }
 
 export default App
