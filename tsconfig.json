@@ -9,7 +9,7 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "lib": ["dom", "dom.iterable", "esnext"],
-    "module": "esnext",
+    "module": "CommonJS",
     "moduleResolution": "node",
     "noEmit": true,
     "noFallthroughCasesInSwitch": true,
@@ -25,12 +25,19 @@
     "sourceMap": true,
     "strict": true,
     "suppressImplicitAnyIndexErrors": true,
-    "target": "esnext",
+    "target": "ES2015",
     // "baseUrl": "./",
     // "paths": {
     // },
     "incremental": true
   },
-  "include": ["pages", "safe", "components", "next.config.js", "next-env.d.ts"],
+  "include": [
+    "pages",
+    "safe",
+    "components",
+    "next.config.js",
+    "next-env.d.ts",
+    "__previewjs__"
+  ],
   "exclude": ["node_modules"]
 }
